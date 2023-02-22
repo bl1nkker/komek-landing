@@ -1,0 +1,56 @@
+:root{
+    --accent-color: #85D261
+    --primary-color: #fff
+    --secondary-color: #000
+}
+
+header {
+  border-bottom: 1px black solid;
+}
+
+.banner {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("./../assets/images/photo_8.jpeg");
+    height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+
+
+.section-left {
+  width: 45vw;
+}
+.section-right {
+  width: 45vw;
+}
+
+.banner-title{
+  font-size: 4rem;
+}
+
+.banner-text{
+  width: 25%;
+}
+@media screen and (max-width: 768px) {
+  .banner-title{
+    font-size: 2rem;
+  }
+  .banner-text{
+    width: 100%;
+  }
+    .banner{
+        padding: 1rem;
+    }
+  .section-left {
+    width: 100%;
+  }
+  .section-right {
+    width: 100%;
+  }
+}
