@@ -14,7 +14,7 @@ header {
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.2)
     ),
-    url("./../assets/images/photo_8.jpeg");
+    url("./../assets/images/banner.jpeg");
     height: 80vh;
   background-size: cover;
   background-repeat: no-repeat;

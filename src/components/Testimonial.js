@@ -29,7 +29,7 @@ const Testimonial = () => {
       <h2 className="section-title">What people say about us</h2>
       <div className="d-flex flex-column flex-lg-row justify-content-around mt-5">
         {testimonialData.map((testimonial) => (
-          <div className="card col-lg-2">
+          <div className="card col-lg-3">
             <div className="card-body">
               <p className="card-text">{testimonial.text}</p>
               <div className="card-footer d-flex justify-content-between">
