@@ -7,7 +7,38 @@ import Testimonial from "./components/Testimonial";
 import FeedbackForm from "./components/FeedbackForm";
 import Footer from "./components/Footer";
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getFirestore, collection, addDoc } from "firebase/firestore/lite";
+
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyC5QpDxmaU8xWu7_tlvMHXGHg2h08qKqIc",
+  authDomain: "komek-app.firebaseapp.com",
+  projectId: "komek-app",
+  storageBucket: "komek-app.appspot.com",
+  messagingSenderId: "869374547385",
+  appId: "1:869374547385:web:cad6bf191a4ac8d3979268",
+  measurementId: "G-Q15Q8XSPCQ",
+};
+
+// Initialize Firebase
+
 function App() {
+  const createFeedback = async (email, message) => {
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const feedbacksRef = collection(db, "feedbacks");
+    const feedback = {
+      email,
+      message,
+    };
+    await addDoc(feedbacksRef, feedback);
+  };
   return (
     <div className="App">
       <Header />
@@ -20,7 +51,7 @@ function App() {
           RightContent={BusinessModelRight}
         />
         <Testimonial />
-        <FeedbackForm />
+        <FeedbackForm createFeedback={createFeedback} />
       </main>
       <Footer />
     </div>
