@@ -88,9 +88,9 @@ const AboutUsRight = () => {
       </p>
 
       <div className="d-flex flex-column ps-5 pe-5">
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="d-flex flex-column flex-lg-row justify-content-between align-items-center">
           <svg
-            className="text-success"
+            className="text-success me-lg-5"
             xmlns="http://www.w3.org/2000/svg"
             width="128"
             height="128"
@@ -102,16 +102,16 @@ const AboutUsRight = () => {
             />
           </svg>
 
-          <p className="ms-5">
+          <p>
             Our project is dedicated to helping children who suffer from various
             diseases. We raise money for treatment and provision medical care
             for these children. Your support can save lives and give hope for
             the future.
           </p>
         </div>
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="d-flex flex-column flex-lg-row justify-content-between align-items-center">
           <svg
-            className="text-success"
+            className="text-success me-lg-5"
             xmlns="http://www.w3.org/2000/svg"
             width="128"
             height="128"
@@ -123,7 +123,7 @@ const AboutUsRight = () => {
             />
           </svg>
 
-          <p className="ms-5">
+          <p className="">
             Join our community and be part of our mission. Together we can
             achieve more and give children suffering from illness a hope for the
             future. We firmly believe that every child has the right to health

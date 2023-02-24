@@ -1,6 +1,6 @@
 import Testimonials1 from "./../assets/images/testimonials-1.jpeg";
 import Testimonials2 from "./../assets/images/testimonials-2.jpeg";
-import Testimonials3 from "./../assets/images/testimonials-3.jpeg";
+import Testimonials3 from "./../assets/images/testimonials-3.jpg";
 
 const testimonialData = [
   {
@@ -19,8 +19,8 @@ const testimonialData = [
   },
   {
     id: 1,
-    name: "Ayoka Nurzhakip",
-    position: "Student, AlmaU",
+    name: "Diana Zharikova",
+    position: "Head of Treasury, Al Hilal Bank Kazakhstan",
     avatar: Testimonials3,
     text: "I, as a person who has devoted his whole life to charity, welcome your project with pleasure, which combines the possibilities of donation and loyalty in one application. I understand how important it is to have tools that can help people do good and help those in need, and your app is a great example of how technology can be used to achieve charitable causes",
   },
@@ -42,7 +42,7 @@ const Testimonial = () => {
                 class="avatar-img rounded-circle img-fluid"
                 src={testimonial.avatar}
                 alt="avatar"
-                style={{ maxHeight: "4rem", width: "4rem" }}
+                style={{ height: "4rem", width: "4rem" }}
               />
               <div className="d-flex flex-column justify-content-center m-0">
                 <h6>{testimonial.name}</h6>
