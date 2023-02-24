@@ -1,5 +1,5 @@
 import Testimonials1 from "./../assets/images/testimonials-1.jpeg";
-import Testimonials2 from "./../assets/images/testimonials-2.jpeg";
+import Testimonials2 from "./../assets/images/testimonials-2.jpg";
 import Testimonials3 from "./../assets/images/testimonials-3.jpg";
 
 const testimonialData = [
@@ -12,8 +12,8 @@ const testimonialData = [
   },
   {
     id: 1,
-    name: "Bayan Zekey",
-    position: "Student, AlmaU",
+    name: "Saltanat Berdikulova",
+    position: "Senior Specialist, Kcell АО",
     avatar: Testimonials2,
     text: "Komek App seems very interesting and innovative. The concept of a paid subscription with unique points for in-app purchases is original. Also, given the inclusion of charity in the project, your application can become not only entertaining, but also socially significant, attracting users who want to do good.",
   },
