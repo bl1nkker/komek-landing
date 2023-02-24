@@ -28,12 +28,12 @@ const Footer = () => {
               </li> */}
 
               <li class="list-inline-item ms-2">
-                <a href="https://wa.me/+77753378824">
+                <a href="https://wa.me/+77758887001">
                   <i class="text-white fab fa-telegram"></i>
                 </a>
               </li>
               <li class="list-inline-item ms-2">
-                <a href="https://t.me/+77753378824">
+                <a href="https://t.me/+77758887001">
                   <i class="text-white fab fa-whatsapp"></i>
                 </a>
               </li>
