@@ -7,6 +7,8 @@ import Testimonial from "./components/Testimonial";
 import FeedbackForm from "./components/FeedbackForm";
 import Footer from "./components/Footer";
 
+import post1 from "./assets/images/post-1.png";
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc } from "firebase/firestore/lite";
@@ -65,7 +67,7 @@ const AboutUsLeft = () => {
       alt=""
       style={{ width: "100%", borderRadius: "1rem" }}
       class="img-fluid d-lg-block d-none"
-      src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8&w=1000&q=80"
+      src={post1}
     />
   );
 };

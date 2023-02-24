@@ -1,24 +1,28 @@
+import Testimonials1 from "./../assets/images/testimonials-1.jpeg";
+import Testimonials2 from "./../assets/images/testimonials-2.jpeg";
+import Testimonials3 from "./../assets/images/testimonials-3.jpeg";
+
 const testimonialData = [
   {
     id: 1,
-    name: "Yegor Mansurov",
-    position: "CEO, Google",
-    avatar: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur, nisl nec ultricies lacinia, nisl nunc aliquet nisl, ut aliquet nisl nisl sit amet nisl. Sed euismod, nisl nec ultricies lacinia, nisl nunc aliquet nisl, ut aliquet nisl nisl sit amet nisl.",
+    name: "Miras Dolayev",
+    position: "CEO, MOST Academy",
+    avatar: Testimonials1,
+    text: "This project has the potential to become popular and successful. Team have an interesting idea that combines elements of charity, loyalty and exclusivity, which can attract a large number of users.",
   },
   {
     id: 1,
-    name: "Yegor Mansurov",
-    position: "CEO, Google",
-    avatar: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur, nisl nec ultricies lacinia, nisl nunc aliquet nisl, ut aliquet nisl nisl sit amet nisl. Sed euismod, nisl nec ultricies lacinia, nisl nunc aliquet nisl, ut aliquet nisl nisl sit amet nisl.",
+    name: "Bayan Zekey",
+    position: "Student, AlmaU",
+    avatar: Testimonials2,
+    text: "Komek App seems very interesting and innovative. The concept of a paid subscription with unique points for in-app purchases is original. Also, given the inclusion of charity in the project, your application can become not only entertaining, but also socially significant, attracting users who want to do good.",
   },
   {
     id: 1,
-    name: "Yegor Mansurov",
-    position: "CEO, Google",
-    avatar: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur, nisl nec ultricies lacinia, nisl nunc aliquet nisl, ut aliquet nisl nisl sit amet nisl. Sed euismod, nisl nec ultricies lacinia, nisl nunc aliquet nisl, ut aliquet nisl nisl sit amet nisl.",
+    name: "Ayoka Nurzhakip",
+    position: "Student, AlmaU",
+    avatar: Testimonials3,
+    text: "I, as a person who has devoted his whole life to charity, welcome your project with pleasure, which combines the possibilities of donation and loyalty in one application. I understand how important it is to have tools that can help people do good and help those in need, and your app is a great example of how technology can be used to achieve charitable causes",
   },
 ];
 
@@ -32,17 +36,17 @@ const Testimonial = () => {
           <div className="card col-lg-3">
             <div className="card-body">
               <p className="card-text">{testimonial.text}</p>
-              <div className="card-footer d-flex justify-content-between">
-                <img
-                  class="avatar-img rounded-circle img-fluid"
-                  src={testimonial.avatar}
-                  alt="avatar"
-                  width={48}
-                />
-                <div className="d-flex flex-column justify-content-center m-0">
-                  <h6>{testimonial.name}</h6>
-                  <p className="m-0">{testimonial.position}</p>
-                </div>
+            </div>
+            <div className="card-footer d-flex justify-content-between">
+              <img
+                class="avatar-img rounded-circle img-fluid"
+                src={testimonial.avatar}
+                alt="avatar"
+                style={{ maxHeight: "4rem", width: "4rem" }}
+              />
+              <div className="d-flex flex-column justify-content-center m-0">
+                <h6>{testimonial.name}</h6>
+                <p className="m-0">{testimonial.position}</p>
               </div>
             </div>
           </div>

@@ -1,7 +1,16 @@
+import logo from "./../assets/images/logo.svg";
+
 const Header = () => {
   return (
     <header class="d-flex justify-content-between align-items-center p-3 shadow-lg bg-body">
-      <span>Komek</span>
+      <a class="navbar-brand" href="/">
+        <img
+          class="light-mode-item navbar-brand-item"
+          style={{ height: "4rem" }}
+          src={logo}
+          alt="logo"
+        />
+      </a>
       {/* <ul>
       <li><a href='#id'>About us</a></li>
       <li><a href='#id'>Causes</a></li>

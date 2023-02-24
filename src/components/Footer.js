@@ -1,10 +1,17 @@
+import logo from "./../assets/images/logo.svg";
+
 const Footer = () => {
   return (
     <footer class="bg-dark p-3 mt-auto">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-4 text-center text-md-start mb-md-0">
-            <h5 className="text-white m-0">Komek</h5>
+            <img
+              class="light-mode-item navbar-brand-item"
+              style={{ height: "2rem" }}
+              src={logo}
+              alt="logo"
+            />
           </div>
 
           <div class="col-md-4 mb-md-0">
@@ -19,18 +26,14 @@ const Footer = () => {
                   <i class="text-white fab fa-facebook"></i>
                 </a>
               </li> */}
+
               <li class="list-inline-item ms-2">
-                <a href="https://www.instagram.com/dsacademy.kz/">
-                  <i class="text-white fab fa-instagram"></i>
-                </a>
-              </li>
-              <li class="list-inline-item ms-2">
-                <a href="https://t.me/+TavLTORVZ55XAavu">
+                <a href="https://wa.me/+77753378824">
                   <i class="text-white fab fa-telegram"></i>
                 </a>
               </li>
               <li class="list-inline-item ms-2">
-                <a href="https://wa.link/g3w44y">
+                <a href="https://t.me/+77753378824">
                   <i class="text-white fab fa-whatsapp"></i>
                 </a>
               </li>
