@@ -13,7 +13,7 @@ const testimonialData = [
   {
     id: 1,
     name: "Saltanat Berdikulova",
-    position: "Senior Specialist, Kcell АО",
+    position: "Head of educational projects",
     avatar: Testimonials2,
     text: "I never thought donating could be so easy and satisfying until I found Komek. It feels great to know that I'm making a difference in causes that matter to me, and I love that I can also invest in my own happiness with the self-love gifts. Plus, the app is so user-friendly that I hardly even notice the monthly donations coming out of my account. Highly recommend!",
   },
